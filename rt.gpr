@@ -1,0 +1,22 @@
+with "xmlada";
+with "util.gpr";
+
+project Rt is
+
+   for Languages use ("Ada");
+
+   package Ide is
+      for Vcs_Kind use "Git";
+   end Ide;
+
+   for Source_Dirs use ("rt");
+   for Object_Dir use "build/";
+   for Library_Name use "librt";
+   for Library_Dir use "lib/";
+   for Library_Src_Dir use "rt/";
+
+   package Naming is
+   end Naming;
+
+end Rt;
+

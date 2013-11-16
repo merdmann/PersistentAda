@@ -1,0 +1,15 @@
+project Util is
+
+   for Source_Dirs use ("utils");
+   for Object_Dir use "build/";
+   for Library_Name use "libutils";
+   for Library_Dir use "lib/";
+
+   package Ide is
+      for Vcs_Kind use "Git";
+   end Ide;
+
+   for Library_Kind use "static";
+
+end Util;
+
